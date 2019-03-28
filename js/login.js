@@ -1,0 +1,18 @@
+$(function(){
+    $(".phone-login").click(function(){
+        $(".phone-login").addClass("login-type-hover");
+        $(".normal-login").removeClass("login-type-hover");
+        $(".phone-login-area").css("display","block");
+        $(".normal-login-area").css("display","none");
+        $(".phone-login-alert").css("display","block");
+        $(".forgive").css("display","none");
+    });
+    $(".normal-login").click(function(){
+        $(".phone-login").removeClass("login-type-hover");
+        $(".normal-login").addClass("login-type-hover");
+        $(".phone-login-area").css("display","none");
+        $(".normal-login-area").css("display","block");
+        $(".forgive").css("display","block");
+        $(".phone-login-alert").css("display","none");
+    });
+});
